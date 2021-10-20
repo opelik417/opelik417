@@ -2,13 +2,10 @@
 html {
     font-family: 'Exo 2', sans-serif;
 }
-.head {
-    width: 70px;
-}
 .player {
+    width: 240px;
     object-fit: cover;
-    width: 260px;
-    height: 390px;
+    height: 360px;
 }
 h1{
     text-align: center;
@@ -29,35 +26,43 @@ h2{
     text-align: center;
     color: blanchedalmond;
 }
-.a1{
-    width: 260px;
+.name{
     text-align: center;
     color: blanchedalmond;
 }
-.a2{
+.people_stely{
     margin: 25px;
-    width: 260px;
+    margin-bottom: 0px;
 }
-.a3{
+.players{
+    margin: 15px;
+    flex-basis: 100%;
     justify-content: center;
     display: flex;
+    flex-wrap: wrap;
 }
-header{
-    width: 100%;
-    margin: 0px;
-    background-color: #222222;
-}
-.a4{
-    display: flex;
-}
-.a5{
+.hat{
     width: 489px;
+    display: flex;
+    flex-direction: column;
 }
-.a6{
+.hat_main{
     display: flex;
     justify-content: center;
 }
-.a7{
+.logo{
     border-radius: 10px;
     margin-top: 20px;
+}
+
+.block{
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
 }
