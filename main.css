@@ -2,52 +2,74 @@
 html {
     font-family: 'Exo 2', sans-serif;
 }
-.player {
-    width: 240px;
-    object-fit: cover;
-    height: 360px;
-    border-radius: 4px;
-}
 h1{
     text-align: center;
     margin: 0px;
-    color: blanchedalmond;
 }
 p{
     text-align: center;
     margin-top: 0px;
-    color: blanchedalmond;
-}
-body{
-    margin: 0px;
-    padding: 0px;
-    background-color: #333333;
 }
 h2{
     text-align: center;
-    color: blanchedalmond;
+}
+.light-theme{
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+}
+.dark-theme{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(224, 224, 224);
+}
+.light-theme .text{
+    color: rgb(255, 240, 218);
+}
+.dark-theme .text{
+    color: #333333
+}
+.theme-button{
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    all: unset;
+}
+.player {
+    width: 240px;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: 0.2s
+}
+.player:hover{
+    transform: scale(1.03);
 }
 .name{
     text-align: center;
-    color: blanchedalmond;
 }
 .people_stely{
     margin: 25px;
     margin-bottom: 0px;
 }
 .players{
-    margin: 15px;
-    flex-basis: 100%;
-    justify-content: center;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    flex-basis: 100%;
+    margin: 15px;
 }
 .main_logo{
     margin: 0;
     padding: 0;
     border-radius: 10px;
-    box-shadow: 0 0 5px;;
+    box-shadow: 0 0 5px;
     margin-top: 20px;
+    background-color: #333333;
+    transition: 0.2s
+}
+.main_logo:hover{
+    transform: scale(1.02);
 }
 .block{
     display: flex;
@@ -76,7 +98,7 @@ h2{
 }
 @media(max-width: 500px){
     .hat{
-        width: 400px;
+        width: 300px;
         display: flex;
         flex-direction: column;
     }
@@ -87,6 +109,6 @@ h2{
     .logo{
         border-radius: 10px;
         object-fit: cover;
-        width: 400px;
+        width: 300px;
     }
 }

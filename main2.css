@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html {
+    font-family: 'Exo 2', sans-serif;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #333333;
+}
+p{
+    margin: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+ul{
+    padding-left: 20px;
+    margin-top: 5px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.photo{
+    width: 300px;
+    object-fit: cover;
+    height: 450px;
+    border-radius: 7px;
+}
+.biography{
+    color: blanchedalmond;
+    list-style: none;
+}
+.list{
+    display: flex;
+}
+.class{
+    font-weight: bold;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.back:hover{
+    transform: scale(1.03);
+}
+@media (min-width: 600px) {
+    .info{
+        margin-left: 10px;
+        width: 300px;
+        height: 448px;
+        border: 1px double silver;
+        border-radius: 5px;
+    }
+    .logo{
+        width: 489px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .back{
+        width: 489px;
+        border-radius: 10px;
+        margin: 0;
+        padding: 0;
+        box-shadow: 0 0 5px;
+        transition: 0.2s
+    }
+}
+@media (max-width: 600px) {
+    .info{
+        margin-top: 10px;
+        width: 300px;
+        height: 448px;
+        border: 1px double silver;
+        border-radius: 5px;
+    }
+    .logo{
+        width: 350px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .back{
+        width: 350px;
+        border-radius: 10px;
+        margin: 0;
+        padding: 0;
+        box-shadow: 0 0 5px;
+        transition: 0.2s
+    }
+}
